@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/calorEspec.css">
+    <link rel="stylesheet" href="https://use.typekit.net/nhv4qhf.css">
+</head>
+<body>
+    <section class="section__model-1">
+        <h2>Para el calor específico, y para alimentos de composición conocida, por encima de su punto de congelación</h2>
+        <form>
+            <label for="masasAgua">
+                Ingrese la Fracción másica del Agua
+            </label>
+            <input id="masasAgua" type="number" placeholder="Ingresa número entero">
+            <label for="masasProteina">
+                Ingrese la Fracción másica de la Proteína
+            </label>
+            <input id="masasProteina" type="number" placeholder="Ingresa número entero">
+            <label for="masasGrasa">
+                Ingrese la Fracción másica de la grasa
+            </label>
+            <input id="masasGrasa" type="number" placeholder="Ingresa número entero">
+            <label for="masasCarbo">
+                Ingrese la Fracción másica de los Carbohidratos
+            </label>
+            <input id="masasCarbo" type="number" placeholder="Ingresa número entero">
+            <label for="masasCeniz">
+                Ingrese la Fracción másica de las Cenizas
+            </label>
+            <input id="masasCeniz" type="number" placeholder="Ingresa número entero">
+            <button type="button" onclick="onclickCalcularCalorEspecifico()">
+                Calcular el Calor Específico
+            </button>
+        </form>
+
+        <p id="ResultCalor"></p>
+    </section>
+    <section class="section__model-2">
+        <h3>Para productos cárnicos con humedad entre 26 y 100%, frutas con contenido de agua superior al 50%</h3>
+        <form>
+            <label for="form__agua-model-2">
+                Ingrese la Fracción másica del Agua
+            </label>
+            <input id="form__agua-model-2" type="number" placeholder="Ingresa número entero">
+            <button type="button" onclick="onclickCalcularCalorEspecificoModeloDos()">
+                Calcular el Calor Específico
+            </button>
+        </form>
+
+        <p id="ResultadoModelo2"></p>
+    </section>
+    <section class="section__model-3">
+        <h3>Para Alimentos Congelados</h3>
+        <form>
+            <label for="form__agua-model-3">
+                Ingrese la Fracción másica del Agua
+            </label>
+            <input id="form__agua-model-3" type="number" placeholder="Ingresa número entero">
+            <button type="button" onclick="onclickCalcularCalorEspecificoModeloTres()">
+                Calcular el Calor Específico
+            </button>
+        </form>
+
+        <p id="ResultadoModelo3"></p>
+    </section>
+
+    <script src="./logica.js"></script>
+    <script src="./logica2.js"></script>
+    <script src="./logica3.js"></script>
+</body>
+</html>
